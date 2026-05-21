@@ -1,0 +1,13 @@
+.app-main-content {
+  padding-top: 80px; /* offset for sticky navbar */
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  .app-main-content {
+    padding-top: 70px;
+  }
+}
