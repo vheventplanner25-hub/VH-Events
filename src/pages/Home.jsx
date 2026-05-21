@@ -10,7 +10,7 @@ import Review from './Review';
 import abbyImage from '../assets/images/abby.jpg';
 import aboutImg1 from '../assets/images/aboutimg1.avif';
 import foundersImg from '../assets/images/founders.jpg';
-import homeImg from '../assets/images/homeimg.png';
+import homeImg from '../assets/images/vhlogodesign.jpg';
 
 export default function Home() {
   const [activeReview, setActiveReview] = useState(0);
