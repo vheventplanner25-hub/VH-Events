@@ -8,7 +8,7 @@ import Review from './Review';
 
 // Image imports
 import abbyImage from '../assets/images/abby.jpg';
-import aboutImg1 from '../assets/images/aboutimg1.avif';
+import aboutImg1 from '../assets/images/CoreTeam.jpeg';
 import foundersImg from '../assets/images/founders.jpg';
 import homeImg from '../assets/images/vhlogodesign.jpg';
 
@@ -131,17 +131,37 @@ export default function Home() {
 
           {/* About Copy */}
           <div className="about-details">
-            <span className="section-label">Bespoke Experiences</span>
-            <h2 className="section-title">Where Vision Meets Celebration</h2>
+            <span className="section-label">About VH EVENT PLANNER</span>
+            <h2 className="section-title">Where Vision Meets <span className="gold-text-gradient">Celebration</span></h2>
             <p className="about-paragraph highlight">
-              VH Event Planner is a full-service event planning company specializing in high-profile Weddings, Corporate Galas, and elite Social Occasions.
+              At VH EVENT PLANNER, we believe every wedding is a once-in-a-lifetime celebration that deserves perfection, elegance, and unforgettable memories.
             </p>
             <p className="about-paragraph">
-              What sets us apart is our deep understanding of the emotional and strategic significance behind every occasion. We believe no two events are the same — that's why we craft bespoke setups that reflect your personality, values, or brand identity.
+              With a passionate team of experienced professionals, we specialize in luxury wedding planning, hospitality management, logistics coordination, guest experience, and flawless event execution. From intimate ceremonies to grand destination weddings, our focus remains on delivering seamless celebrations with creativity, professionalism, and attention to every detail.
             </p>
             <p className="about-paragraph">
-              From lavish destination weddings to high-stakes product launches, our dedication to excellence ensures that every aspect — from luxury decor and logistics to guest hospitality and vendor management — is handled flawlessly.
+              Our mission is simple — to transform dreams into beautifully managed experiences while ensuring comfort, happiness, and memorable moments for every guest.
             </p>
+
+            {/* Vision & Mission Cards */}
+            <div className="about-vm-cards">
+              <div className="vm-card glass-panel">
+                <span className="vm-card-label">OUR VISION</span>
+                <h4 className="vm-card-title">Vision</h4>
+                <p className="vm-card-text">
+                  {/* <i style={{ color: 'white', backgroundColor: '#f3ff067a', padding: '2px 8px', borderRadius: '4px' }}>"You have special occasion, and we have responsibility..."</i> */}
+                  {/* <br /> */}
+                  To become a trusted name in luxury wedding and event management by creating extraordinary celebrations that reflect elegance, emotions, and unforgettable experiences.
+                </p>
+              </div>
+              <div className="vm-card glass-panel">
+                <span className="vm-card-label">OUR MISSION</span>
+                <h4 className="vm-card-title">Mission</h4>
+                <p className="vm-card-text">
+                  To deliver premium wedding experiences with perfection — crafting bespoke celebrations that mirror your story, honour every emotion, and leave lasting impressions.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

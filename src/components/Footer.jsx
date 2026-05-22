@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Send, ArrowUpRight } from 'lucide-react';
-import brandLogo from '../assets/images/homeimg.png';
+import brandLogo from '../assets/images/vhlogodesign.jpg';
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -33,14 +33,14 @@ export default function Footer() {
         <div className="footer-brand-bar">
           <Link to="/" className="footer-logo">
             <img src={brandLogo} alt="VH Events Logo" />
-            <span>VH Event Planner</span>
+            <span>VH Events</span>
           </Link>
           <div className="footer-social-icons">
             <a href="https://wa.me/917066670417" target="_blank" rel="noopener noreferrer" className="social-icon whatsapp">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></svg>
             </a>
             <a href="https://www.instagram.com/vh_event_planner/" target="_blank" rel="noopener noreferrer" className="social-icon instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
             </a>
           </div>
         </div>
@@ -101,7 +101,7 @@ export default function Footer() {
           </div>
 
           {/* Col 4 */}
-          <div className="footer-col newsletter-col">
+          {/* <div className="footer-col newsletter-col">
             <h3>Newsletter</h3>
             <p>Subscribe to our newsletter for event design ideas, helpful planning tips, and exclusive offers.</p>
             <form onSubmit={handleSubscribe} className="newsletter-form">
@@ -120,7 +120,7 @@ export default function Footer() {
               {error && <span className="newsletter-error">{error}</span>}
               {success && <span className="newsletter-success">Thank you for subscribing! ✨</span>}
             </form>
-          </div>
+          </div> */}
         </div>
 
         <hr className="hr-line-premium" style={{ margin: '40px 0' }} />
