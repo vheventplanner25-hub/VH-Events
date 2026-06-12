@@ -4,56 +4,56 @@ export default function WeWorked() {
   const cities = [
     "Pune",
     "Mumbai",
-    "Aurangabad",
+      "Aurangabad",
     "Ahmednagar",
-    "Igatpuri",
+     "Igatpuri",
     "Nasik",
     "Hyderabad",
     "Khajuraho",
-    "Jalgaon",
+     "Jalgaon",
     "Bhusawal",
     "Mahableshwar",
-    "Lonavala",
+     "Lonavala",
     "Daman",
     "Goa",
-    "Delhi",
+     "Delhi",
     "Raipur",
   ];
 
   const venues = [
-    "The Corinthians Club",
-    "JW Marriott",
-    "Lemon Tree",
-    "Tip Top International",
-    "Santosa",
+     "The Corinthians Club",
+     "JW Marriott",
+     "Lemon Tree",
+     "Tip Top International",
+     "Santosa",
     "Elegant Waterfront Resort",
-    "Courtyard By Marriott",
-    "Oxford Gold Resort",
-    "Pandit Farms",
-    "Amanora Fern",
-    "Hyatt",
-    "Orchid Hotel",
-    "Novotel Hotel",
-    "Westin KP",
+     "Courtyard By Marriott",
+     "Oxford Gold Resort",
+     "Pandit Farms",
+     "Amanora Fern",
+     "Hyatt",
+     "Orchid Hotel",
+     "Novotel Hotel",
+     "Westin KP",
     "Sheraton Grand",
-    "Della Resort",
-    "Iksana Resort",
-    "Lagoona Resort",
+     "Della Resort",
+     "Iksana Resort",
+     "Lagoona Resort",
     "Novotel",
     "Radisson Blu",
-    "The Forest Club Resort",
+     "The Forest Club Resort",
     "The Foresta",
-    "GCC Club",
+     "GCC Club",
     "The St. Regis",
-    "Sand & Sand",
+      "Sand & Sand",
     "Sula Wine Yard",
-    "Enrise By Sayaji",
-    "Bright Land",
+     "Enrise By Sayaji",
+     "Bright Land",
     "Taj Fountain",
-    "TGL Resort",
+     "TGL Resort",
     "Evershine Resort & Spa",
-    "The Lalit",
-    "ITC Grand",
+     "The Lalit",
+     "ITC Grand",
     "Hotel Chandela",
   ];
 
@@ -84,14 +84,14 @@ const mobileVenueRows = chunkArray(venues, Math.ceil(venues.length / 3));
       <div className="fade-left"></div>
       <div className="fade-right"></div>
 
-      {/* Cities */}
+      {/* cities */}
       <MarqueeRow
         items={cities}
         icon="📍"
         direction="left"
       />
 
-      {/* Desktop Venue Rows */}
+      {/* desktop venue rows */}
       <div className="desktop-view">
         <MarqueeRow
           items={desktopVenues1}
@@ -106,7 +106,7 @@ const mobileVenueRows = chunkArray(venues, Math.ceil(venues.length / 3));
         />
       </div>
 
-      {/* Mobile Venue Rows */}
+      {/* mobile venue rows */}
       <div className="mobile-view">
   {mobileVenueRows.map((row, index) => (
     <MarqueeRow

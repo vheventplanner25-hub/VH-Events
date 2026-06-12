@@ -34,6 +34,7 @@
 .marquee-container {
   overflow: hidden;
   margin: 20px 0;
+  padding: 8px 0px 0px 0px;
 }
 
 .marquee-container:hover .marquee,
@@ -78,7 +79,7 @@
 }
 
 .glass-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-5px) ;
 
   border-color: #f59e0b;
 
