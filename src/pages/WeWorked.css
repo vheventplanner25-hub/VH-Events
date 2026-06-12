@@ -1,144 +1,186 @@
 .worked-section {
-    background: #0d0d0d;
-    padding: 100px 0;
-    overflow: hidden;
-    position: relative;
+  background: #0d0d0d;
+  padding: 100px 0;
+  overflow: hidden;
+  position: relative;
 }
 
 .worked-heading {
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
 }
 
 .worked-heading span {
-    color: #f59e0b;
-    letter-spacing: 3px;
-    font-size: 14px;
+  color: #f59e0b;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .worked-heading h2 {
-    color: white;
-    font-size: 48px;
-    margin: 15px 0;
+  color: white;
+  font-size: 48px;
+  margin: 15px 0;
 }
 
 .worked-heading p {
-    color: #a1a1aa;
-    max-width: 700px;
-    margin: auto;
+  color: #a1a1aa;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.6;
 }
 
 .marquee-container {
-    overflow: hidden;
-    margin: 20px 0;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.marquee-container:hover .marquee,
+.marquee-container:hover .marquee-reverse {
+  animation-play-state: paused;
 }
 
 .marquee-track {
-    display: flex;
-    width: max-content;
-    gap: 20px;
+  display: flex;
+  width: max-content;
+  gap: 20px;
 }
 
 .marquee {
-    animation: scrollLeft 30s linear infinite;
+  animation: scrollLeft 30s linear infinite;
 }
 
 .marquee-reverse {
-    animation: scrollRight 30s linear infinite;
-}
-
-.marquee-track:hover {
-    animation-play-state: paused;
+  animation: scrollRight 30s linear infinite;
 }
 
 .glass-card {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 
-    padding: 14px 28px;
+  padding: 14px 28px;
 
-    border-radius: 20px;
+  border-radius: 20px;
 
-    background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
 
-    backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 
-    border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
-    color: white;
+  color: white;
 
-    white-space: nowrap;
+  white-space: nowrap;
 
-    transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .glass-card:hover {
-    transform: translateY(-4px);
+  transform: translateY(-4px);
 
-    border-color: orange;
+  border-color: #f59e0b;
 
-    box-shadow: 0 0 20px rgba(255,165,0,0.2);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
 }
 
 .glass-card p {
-    margin: 0;
+  margin: 0;
 }
 
 .fade-left {
-    position: absolute;
+  position: absolute;
+  left: 0;
+  top: 0;
 
-    left: 0;
-    top: 0;
+  width: 120px;
+  height: 100%;
 
-    width: 120px;
-    height: 100%;
+  background: linear-gradient(
+    to right,
+    #0d0d0d,
+    transparent
+  );
 
-    background: linear-gradient(
-        to right,
-        #0d0d0d,
-        transparent
-    );
-
-    z-index: 2;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .fade-right {
-    position: absolute;
+  position: absolute;
+  right: 0;
+  top: 0;
 
-    right: 0;
-    top: 0;
+  width: 120px;
+  height: 100%;
 
-    width: 120px;
-    height: 100%;
+  background: linear-gradient(
+    to left,
+    #0d0d0d,
+    transparent
+  );
 
-    background: linear-gradient(
-        to left,
-        #0d0d0d,
-        transparent
-    );
+  z-index: 2;
+  pointer-events: none;
+}
 
-    z-index: 2;
+.desktop-view {
+  display: block;
+}
+
+.mobile-view {
+  display: none;
 }
 
 @keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
 
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @keyframes scrollRight {
+  from {
+    transform: translateX(-50%);
+  }
 
-    from {
-        transform: translateX(-50%);
-    }
+  to {
+    transform: translateX(0);
+  }
+}
 
-    to {
-        transform: translateX(0);
-    }
+@media (max-width: 768px) {
+  .worked-section {
+    padding: 70px 0;
+  }
+
+  .worked-heading h2 {
+    font-size: 32px;
+  }
+
+  .worked-heading p {
+    font-size: 14px;
+  }
+
+  .glass-card {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+  }
+
+  .fade-left,
+  .fade-right {
+    width: 60px;
+  }
 }
