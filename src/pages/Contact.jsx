@@ -178,9 +178,9 @@ export default function Contact() {
                 <div className="detail-info">
                   <h4>Call Coordinates</h4>
                   <h2>Harshal Patil</h2>
-                  <p className="spaced-p"><a href="tel:9588626847">9588626847</a></p>
-                  <h2>Vansh Rajput</h2>
                   <p className="spaced-p"><a href="tel:7261923235">7261923235</a></p>
+                  <h2>Vansh Rajput</h2>
+                  <p className="spaced-p"><a href="tel:9588626847">9588626847</a></p>
                 </div>
               </div>
 

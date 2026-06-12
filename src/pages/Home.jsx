@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { Award, Target, Lightbulb, Users, CheckCircle, Quote, Sparkles, Phone, ArrowRight, UserCheck } from 'lucide-react';
 import "./Home.css";
 import Review from './Review';
-
-
+import WeWorked from './WeWorked';
 
 // Image imports
 import abbyImage from '../assets/images/abby.jpg';
@@ -215,6 +214,12 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+{/* ------------------------------------------ */}
+
+          < WeWorked />
+
+{/* --------------------------------------------- */}
 
       <hr className="hr-line-premium" />
 
