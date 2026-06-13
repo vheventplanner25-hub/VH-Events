@@ -59,8 +59,16 @@ export default function Services() {
       title: "Customized Service Packages",
       desc: "Every event is unique. We tailor our logistical service combinations to suit your scope and budget.",
       bullets: ["Flexible value-driven planning options", "Bespoke service bundles", "Modular combinations", "Full-scale end-to-end setups"]
-    }
+    },
   ];
+
+  
+    // {
+    
+    //   title: "Customized Service Packages",
+    //   desc: ".",
+    //   bullets: []
+    // }
 
   const managementDepts = [
     { title: "Hospitality", desc: "Manages guest welcome desks, hotel check-in/check-out concierge support, room tagging, and hampers placements in rooms." },

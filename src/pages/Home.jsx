@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Award, Target, Lightbulb, Users, CheckCircle, Quote, Sparkles, Phone, ArrowRight, UserCheck } from 'lucide-react';
+import { Award, Target, Lightbulb, Users,User,  CheckCircle, Quote, Sparkles, Phone, ArrowRight, UserCheck, MapPin, Building2} from 'lucide-react';
 import "./Home.css";
 import Review from './Review';
 import WeWorked from './WeWorked';
@@ -24,14 +24,15 @@ export default function Home() {
   }, []);
 
   const whyChooseUsData = [
-    { icon: <Sparkles className="gold-icon" />, title: "250+ Events Organized", desc: "From dream destination weddings to corporate galas, we manage every detail." },
+    { icon: <Sparkles className="gold-icon" />, title: "500+ Events ", desc: "From dream destination weddings to corporate galas, we manage every detail." },
+    { icon: <User className="gold-icon" />, title: "200+ Clients", desc: "Trusted by prominent brands and elite families alike." },
+    { icon: <Users className="gold-icon" />, title: "50,000+ Happy Guests", desc: "Creating warm, memorable, and premium experiences for every attendee." },
+    { icon: <Building2 className="gold-icon" />, title: "34+ Premium Venues", desc: "Successfully managing events at luxury hotels, resorts, clubs, and destination venues across India." },
     { icon: <Target className="gold-icon" />, title: "Personalized Service", desc: "Tailored planning specifically designed to meet your unique desires." },
     { icon: <Lightbulb className="gold-icon" />, title: "Innovative Concepts", desc: "Creative and trend-setting designs for a truly stand-out celebration." },
-    { icon: <Users className="gold-icon" />, title: "Strong Vendor Network", desc: "Only reliable, top-tier partners ensuring high quality and seamless execution." },
     { icon: <CheckCircle className="gold-icon" />, title: "End-to-End Management", desc: "From early brainstorming to post-event wrap-up – we handle it all." },
     { icon: <Award className="gold-icon" />, title: "Proven Track Record", desc: "Successful events with glowing praise and wonderful client memories." },
-    { icon: <Users className="gold-icon" />, title: "100+ Clients", desc: "Trusted by prominent brands and elite families alike." },
-    { icon: <Users className="gold-icon" />, title: "50,000+ Happy Guests", desc: "Creating warm, memorable, and premium experiences for every attendee." }
+
   ];
 
   const powerhouseMembers = [
@@ -141,6 +142,9 @@ export default function Home() {
             <p className="about-paragraph">
               Our mission is simple — to transform dreams into beautifully managed experiences while ensuring comfort, happiness, and memorable moments for every guest.
             </p>
+            <p className="about-paragraph">
+              At VH EVENT PLANNER, we don't just manage events—we create unforgettable experiences. From luxury weddings to grand celebrations, our team focuses on flawless planning, premium hospitality, stylish execution, and smooth coordination.
+            </p>
 
             {/* Vision & Mission Cards */}
             <div className="about-vm-cards">
@@ -215,11 +219,11 @@ export default function Home() {
         </div>
       </section>
 
-{/* ------------------------------------------ */}
+      {/* ------------------------------------------ */}
 
-          < WeWorked />
+      < WeWorked />
 
-{/* --------------------------------------------- */}
+      {/* --------------------------------------------- */}
 
       <hr className="hr-line-premium" />
 
