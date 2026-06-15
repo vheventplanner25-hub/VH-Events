@@ -201,7 +201,7 @@ export default function Contact() {
                 <MapPin className="detail-icon map-c" size={22} />
                 <h3>Office Location</h3>
               </div>
-              <p>Flat no 202, Shree Sadguru Heights, Ambegaon Budruk, Pune, Maharashtra 411046 <a href="https://maps.app.goo.gl/VJ1YNpdBpzw6t5AR8">↗</a></p>
+              <p>Flat no 202, Shree Sadguru Heights, Ambegaon Budruk, Pune, Maharashtra 411046 <a href="https://maps.app.goo.gl/VJ1YNpdBpzw6t5AR8" target="_blank" rel="noopener noreferrer">↗</a></p>
    
 
               {/* <div className="map-iframe-container">
