@@ -201,17 +201,12 @@ export default function Contact() {
                 <MapPin className="detail-icon map-c" size={22} />
                 <h3>Office Location</h3>
               </div>
-              <p>Shri Sadguru Heights, Pune, Maharashtra, India.</p>
+              <p>Flat no 202, Shree Sadguru Heights, Ambegaon Budruk, Pune, Maharashtra 411046 <a href="https://maps.app.goo.gl/VJ1YNpdBpzw6t5AR8">↗</a></p>
+   
 
-              <div className="map-iframe-container">
-                <iframe
-                  title="VH Events Office Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1002.3679496173135!2d73.83778142659526!3d18.46386057995143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29599c8e75171%3A0x10107854a2bc2329!2sShri%20SADGURU%20HEIGHTS!5e0!3m2!1sen!2sin!4v1746878980599!5m2!1sen!2sin"
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
+              {/* <div className="map-iframe-container">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d179.85919533329877!2d73.83863468551607!3d18.46396436680552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29599c8e75171%3A0x10107854a2bc2329!2sShri%20SADGURU%20HEIGHTS!5e1!3m2!1sen!2sin!4v1781504740826!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div> */}
             </div>
           </div>
 
@@ -404,18 +399,19 @@ export default function Contact() {
         .detail-icon {
           width: 48px;
           height: 48px;
-          border-radius: 50%;
+
+          border-radius: 10%;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-shrink: 0;
-          border: 1px solid var(--border-gold);
+          // border: 1px solid var(--border-gold);
         }
 
-        .detail-icon.wa { color: #25d366; background: rgba(37, 211, 102, 0.05); }
-        .detail-icon.phone-c { color: var(--primary-gold); background: rgba(252, 187, 87, 0.05); }
-        .detail-icon.mail-c { color: #74b9ff; background: rgba(116, 185, 255, 0.05); }
-        .detail-icon.map-c { color: #ff7675; background: rgba(255, 118, 117, 0.05); }
+        .detail-icon.wa { color: #25d366; background: rgba(37, 211, 101, 0); }
+        .detail-icon.phone-c { color: var(--primary-gold); background: rgba(252, 186, 87, 0); }
+        .detail-icon.mail-c { color: #74b9ff; background: rgba(116, 186, 255, 0); }
+        .detail-icon.map-c { color: #ff7675; background: rgba(255, 117, 117, 0); }
 
         .detail-info h4 {
           font-family: var(--font-sans);
@@ -469,6 +465,10 @@ export default function Contact() {
           color: var(--text-muted);
           font-size: 14px;
           margin-bottom: 24px;
+        }
+
+        .office-location-card p a{
+          font-size: 25px
         }
 
         .map-iframe-container {
